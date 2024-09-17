@@ -1,0 +1,44 @@
+public class Card{
+    private int value; //Value of card
+    private String suit; // Suit of card
+    private String rank; // Rank of card
+
+    //card constructor
+    public Card(int value, String suit, String rank){
+        this.value = value;
+        this.suit = suit;
+        this.rank = rank;
+    }
+
+public int getValue(){
+    return value;
+}
+
+public void setValue(int value){
+    this.value = value;
+}
+
+public String getSuit(){
+    return suit;
+}
+
+public void setSuit(String suit){
+    this.suit = suit;
+}
+
+public String getRank(){
+    return rank;
+}
+
+public void setRank(String rank){
+    this.rank = rank;
+}
+
+public String toString(){
+    return rank + " of " + suit;
+}
+} 
+private static void shuffleDeck() {
+        Collections.shuffle(cards); // Use Collections.shuffle to randomize card order
+        currentCardIndex = 0; // Reset the card index after shuffling
+    }
